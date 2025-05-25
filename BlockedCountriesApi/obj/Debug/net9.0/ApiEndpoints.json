@@ -1,0 +1,70 @@
+[
+  {
+    "ContainingType": "BlockedCountriesApi.Controllers.BlockedController",
+    "Method": "AddBlockedCountry",
+    "RelativePath": "Blocked",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "country",
+        "Type": "BlockedCountriesApi.Models.BlockedCountry",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BlockedCountriesApi.Controllers.BlockedController",
+    "Method": "GetAll",
+    "RelativePath": "Blocked",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[BlockedCountriesApi.Models.BlockedCountry, BlockedCountriesApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BlockedCountriesApi.Controllers.BlockedController",
+    "Method": "Remove",
+    "RelativePath": "Blocked/{code}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "code",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BlockedCountriesApi.Controllers.IpLookupController",
+    "Method": "Lookup",
+    "RelativePath": "IpLookup/{ip}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ip",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
